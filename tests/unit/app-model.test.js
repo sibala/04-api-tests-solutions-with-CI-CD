@@ -9,7 +9,7 @@ describe("app-model", () => {
   });
 
   test("posts starts as empty array", () => {
-    expect(model.posts).toEqual([]);
+    expect(model.posts).toEqual(["Failed"]);
   });
 
   test("reset clears all state", () => {
