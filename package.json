@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run && npm run test:e2e",
+    "test": "vitest run --coverage && npm run test:e2e",
     "test:e2e": "vite build && npx playwright test",
     "lint": "eslint src/",
     "preview": "vite preview"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.58.2",
+    "@vitest/coverage-v8": "^4.1.0",
     "eslint": "^10.0.3",
     "globals": "^17.4.0",
     "jsdom": "^29.0.0",
